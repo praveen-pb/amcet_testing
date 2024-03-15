@@ -7,6 +7,9 @@ class BasicInfo:
         self.age = age
         self.gender = gender
 
+    def get_name_and_gender(self):
+        return f"{self.name} - {self.gender}, this is it"
+
     def get_full_name(self):
         """
         we can add logics here
@@ -42,6 +45,9 @@ class BasicInfo:
             return None
         elif bank_name == "Axis":
             return 50000
+
+    def get_bank_details(self):
+        return None
 
 
 basic_info = BasicInfo("praveen", 25, "male")
